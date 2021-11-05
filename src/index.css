@@ -1,13 +1,94 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  background-color: #f5f5f5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.header {
+  height: 80px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.content {
+  width: 760px;
+  margin: 0 auto;
+}
+.logo img {
+  width: 75px;
+  height: 75px;
+}
+.search input {
+  width: 280px;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid #cdcdcd;
+  font-size: 24px;
+  padding-left: 20px;
+  outline: none;
+}
+.search {
+  flex: 1;
+  margin-left: 30px;
+}
+.profile img {
+  width: 75px;
+  height: 75px;
+}
+.container {
+  width: 720px;
+  padding: 20px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.ads-name {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+}
+.ads-logo img {
+  width: 72px;
+}
+.ads-desc {
+  width: 560px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.ads-img img {
+  margin-top: 20px;
+  width: 720px;
+}
+.ads-tags {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.ads-follow {
+  color: orange;
+}
+.ads-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ads-options {
+  width: 720px;
+  border: 1px solid black;
+}
+.name, .price, .year, .color {
+  font-size: 22px;
 }
