@@ -13,13 +13,12 @@ code {
     monospace;
 }
 .header {
-  height: 80px;
+  height: 60px;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  border-radius: 10px;
 }
 .content {
   width: 760px;
@@ -38,6 +37,10 @@ code {
   padding-left: 20px;
   outline: none;
 }
+.read-more {
+  color: rgb(87, 96, 180);
+  cursor: pointer;
+}
 .search {
   flex: 1;
   margin-left: 30px;
@@ -55,12 +58,17 @@ code {
   margin-top: 20px;
 }
 .ads-name {
+  cursor: pointer;
   font-size: 24px;
   font-weight: 600;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .ads-logo img {
-  width: 72px;
+  width: 82px;
+  height: 82px;
+  margin-right: 20px;
+  cursor: pointer;
+  border-radius: 50%;
 }
 .ads-desc {
   width: 560px;
@@ -71,6 +79,8 @@ code {
 .ads-img img {
   margin-top: 20px;
   width: 720px;
+  border-radius: 7px;
+  height: 450px;
 }
 .ads-tags {
   font-size: 16px;
@@ -78,7 +88,14 @@ code {
   margin-top: 10px;
 }
 .ads-follow {
-  color: orange;
+  cursor: pointer;
+  width: 60px;
+  text-align: center;
+  background-color: #ee6021;
+  margin-bottom: 80px;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px;
 }
 .ads-info {
   display: flex;
@@ -86,9 +103,87 @@ code {
   align-items: center;
 }
 .ads-options {
-  width: 720px;
-  border: 1px solid black;
+  margin-top: 5px;
+  display: flex;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  font-family: "Red Hat Mono", monospace;
+  padding: 10px;
+  overflow: hidden;
 }
-.name, .price, .year, .color {
-  font-size: 22px;
+.ads-options .mark,
+.price,
+.color,
+.year,
+.wheel,
+.model,
+.mileage {
+  border: solid 1px rgb(212, 205, 205);
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.ads-options div:hover {
+  background-color: rgb(79, 110, 196);
+  transition: 0.3s;
+}
+.title {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.add-favorite {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 65px;
+}
+.filter {
+  position: fixed;
+  top: 5%;
+  left: 13%;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 5px;
+  height: 700px;
+}
+.slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide img {
+  margin-top: 20px;
+  width: 720px;
+  border-radius: 7px;
+  height: 450px;
+}
+.right-slide {
+  position: absolute;
+  top: 50%;
+  z-index: 9;
+  color: #ffffff47;
+  right: 32px;
+  font-size: 32px;
+  user-select: none;
+}
+.left-slide {
+  position: absolute;
+  z-index: 9;
+  top: 50%;
+  color: #ffffff47;
+  left: 32px;
+  font-size: 32px;
+  user-select: none;
+}
+a {
+  color: #000;
+  text-decoration: none;
 }
